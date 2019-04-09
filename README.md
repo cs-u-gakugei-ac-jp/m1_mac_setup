@@ -29,10 +29,6 @@ https://itunes.apple.com/jp/app/alfred/id405843582?mt=12&ign-mpt=uo%3D4
 
 - Control + Space に Alfred を割り当てる。
 
-## HyperSwitch のインストール
-
-https://bahoom.com/hyperswitch
-
 ## Sequel Pro のインストール
 
 https://sequelpro.com/download
