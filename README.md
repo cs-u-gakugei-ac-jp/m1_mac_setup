@@ -49,17 +49,13 @@ https://www.vagrantup.com/
 
 https://docs.docker.com/docker-for-mac/install/
 
-## Rubymine / Goland / IntelliJ のインストール
+## Rubymine / Goland / IntelliJ / Webstorm のインストール
 
 - 学生アカウント用でインストールする。
 
 https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
 
 - メモリの割り当て量を増やす。
-
-## VSCode のインストール
-
-https://code.visualstudio.com/
 
 ## mac setup file を git clone
 
