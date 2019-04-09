@@ -29,6 +29,10 @@ https://itunes.apple.com/jp/app/alfred/id405843582?mt=12&ign-mpt=uo%3D4
 
 - Control + Space に Alfred を割り当てる。
 
+## HyperSwitch のインストール
+
+https://bahoom.com/hyperswitch
+
 ## Sequel Pro のインストール
 
 https://sequelpro.com/download
@@ -39,7 +43,7 @@ https://dev.mysql.com/downloads/workbench/
 
 ## Virtual Box のインストール
 
-
+https://www.virtualbox.org/
 
 ## Vagrant のインストール
 
@@ -51,13 +55,21 @@ https://docs.docker.com/docker-for-mac/install/
 
 ## Eclipse のインストール
 
-## Rubymine のインストール
+- 下記、URL からインストールする。
 
-## Goland のインストール
+http://mergedoc.osdn.jp/pleiades-redirect/4.8/pleiades_ultimate-mac_jre.zip.html?v=20180923
+
+- メモリの割り当て量を増やす。
+
+## Rubymine / Goland のインストール
+
+- 学生アカウント用でインストールする。
+
+https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
 
 ## VSCode のインストール
 
-## HyperSwitch のインストール
+https://code.visualstudio.com/
 
 ## mac setup file を git clone
 
