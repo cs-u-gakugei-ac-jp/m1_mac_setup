@@ -63,7 +63,7 @@ chsh -s /usr/local/bin/fish
 
 echo "set fish"
 touch ~/.config/fish/config.fish
-echo "source ~/mac_setup/settings/.config.fish" > ~/.config/fish/config.fish
+echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
 
 echo "install fisherman plugin"
 fisher install rbenv pyenv fzf decors/fish-ghq
