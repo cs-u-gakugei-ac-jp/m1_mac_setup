@@ -53,19 +53,13 @@ https://www.vagrantup.com/
 
 https://docs.docker.com/docker-for-mac/install/
 
-## Eclipse のインストール
-
-- 下記、URL からインストールする。
-
-http://mergedoc.osdn.jp/pleiades-redirect/4.8/pleiades_ultimate-mac_jre.zip.html?v=20180923
-
-- メモリの割り当て量を増やす。
-
-## Rubymine / Goland のインストール
+## Rubymine / Goland / IntelliJ のインストール
 
 - 学生アカウント用でインストールする。
 
 https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
+
+- メモリの割り当て量を増やす。
 
 ## VSCode のインストール
 
