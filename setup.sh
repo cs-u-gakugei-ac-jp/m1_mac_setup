@@ -2,56 +2,59 @@
 
 # https://brew.sh/index_ja
 echo "install brew"
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # https://www.vim.org://www.vim.org/
 echo "install vim"
-# brew install vim
+brew install vim
 
 echo "install rmtrash"
 brew install rmtrash
 
 # https://dev.mysql.com/downloads/installer/
 echo "install mysql"
-# brew install mysql@5.7
+brew install mysql@5.7
 
 # https://www.mycli.net/
 echo "install mycli"
-# brew install mycli
+brew install mycli
 
 # https://www.postgresql.org/
 echo "install postgresql"
-# brew install postgresql
+brew install postgresql
 
 # https://github.com/jonas/tig
 echo "install tig"
-# brew install tig
+brew install tig
+
+echo "install reattach-to-user-namespace"
+brew install reattach-to-user-namespace
 
 # https://github.com/junegunn/fzf
 echo "install fzf"
-# brew install fzf
+brew install fzf
 
 # https://github.com/motemen/ghq 
 echo "install ghq"
-# brew install ghq
+brew install ghq
 
 # https://golang.org/
 echo "install goenv"
-# brew install goenv
+brew install goenv
 
 echo "install go"
-# goenv install 1.11.4
-# goenv global 1.11.4
-# goenv rehash
+goenv install 1.11.4
+goenv global 1.11.4
+goenv rehash
 
 # https://www.ruby-lang.org/ja/ 
 echo "install rbenv / ruby-build"
-# brew install rbenv ruby-build
+brew install rbenv ruby-build
 
 echo "install ruby"
-# rbenv install 2.6.1
-# rbenv global 2.6.1
-# rbenv rehash
+rbenv install 2.6.1
+rbenv global 2.6.1
+rbenv rehash
 
 echo "install tmux"
 brew install tmux
@@ -60,19 +63,19 @@ git clone https://github.com/nhdaly/tmux-scroll-copy-mode ~/clone/path
 
 # https://fishshell.com://fishshell.com/
 echo "install fish"
-# brew install fish
+brew install fish
 
 echo "install fisherman"
-# curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 
 echo "change default shell"
-# /usr/local/bin/fish | sudo tee -a /etc/shells
-# chsh -s /usr/local/bin/fish
-# /usr/local/bin/fish
+/usr/local/bin/fish | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
+/usr/local/bin/fish
 
 echo "set fish"
-# touch ~/.config/fish/config.fish
-# echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
+touch ~/.config/fish/config.fish
+echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
 
 echo "install fisherman plugin"
 fisher install rbenv pyenv fzf decors/fish-ghq
