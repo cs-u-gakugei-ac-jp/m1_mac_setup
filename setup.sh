@@ -8,6 +8,9 @@ echo "install brew"
 echo "install vim"
 # brew install vim
 
+echo "install rmtrash"
+brew install rmtrash
+
 # https://dev.mysql.com/downloads/installer/
 echo "install mysql"
 # brew install mysql
