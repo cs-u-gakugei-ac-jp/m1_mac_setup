@@ -25,7 +25,7 @@ if status --is-interactive
   set PATH ~/go/bin $PATH
 
   # Google Cloud SDK.
-  if [ -f '/Users/shota/google-cloud-sdk/path.fish.inc' ]; . '/Users/shota/google-cloud-sdk/path.fish.inc'; end
+  # if [ -f '/Users/shota/google-cloud-sdk/path.fish.inc' ]; . '/Users/shota/google-cloud-sdk/path.fish.inc'; end
  
   # 起動時にtmuxを起動
   if status --is-login
