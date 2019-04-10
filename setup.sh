@@ -13,7 +13,7 @@ brew install rmtrash
 
 # https://dev.mysql.com/downloads/installer/
 echo "install mysql"
-# brew install mysql
+# brew install mysql@5.7
 
 # https://www.mycli.net/
 echo "install mycli"
