@@ -29,9 +29,9 @@ https://itunes.apple.com/jp/app/alfred/id405843582?mt=12&ign-mpt=uo%3D4
 
 - Control + Space に Alfred を割り当てる。
 
-## Sequel Pro のインストール
+## Tableplus のインストール
 
-https://sequelpro.com/download
+https://tableplus.io/
 
 ## MySQL Workbench のインストール
 
