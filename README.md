@@ -66,9 +66,15 @@ https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
 `$ sh ~/mac_setup/setup.sh`
 
 tmux を使用する際には、Iterm の設定が必要になるかも…？
-あと、フォントとカラーの設定!
+
 ```
 Preferencesを開き、 
 General→Selection
 "Applications ing terminal may access clipboard" にチェックを入れる
 ```
+
+あと、フォントとカラーの設定!
+
+![画像](https://user-images.githubusercontent.com/21353481/55887806-2d7a2d00-5be9-11e9-8879-d8f704e626c2.png)
+
+![画像](https://user-images.githubusercontent.com/21353481/55887838-3cf97600-5be9-11e9-91da-8bb775606f02.png)
