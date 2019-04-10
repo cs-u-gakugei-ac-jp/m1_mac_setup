@@ -65,8 +65,8 @@ https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
 
 `$ sh ~/mac_setup/setup.sh`
 
-別途、tmux を使用する際には、Iterm の設定が必要になるかも…？
-
+tmux を使用する際には、Iterm の設定が必要になるかも…？
+あと、フォントとカラーの設定!
 ```
 Preferencesを開き、 
 General→Selection
