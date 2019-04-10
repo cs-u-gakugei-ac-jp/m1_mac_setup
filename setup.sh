@@ -52,6 +52,8 @@ echo "install ruby"
 
 echo "install tmux"
 brew install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/nhdaly/tmux-scroll-copy-mode ~/clone/path
 
 # https://fishshell.com://fishshell.com/
 echo "install fish"
