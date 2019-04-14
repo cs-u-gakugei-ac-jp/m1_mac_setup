@@ -88,3 +88,8 @@ open ~/mac_setup/settings/dracula/Dracula.itermcolors
 git clone https://github.com/powerline/fonts.git ~/mac_setup/settings/powerline
 sh ~/mac_setup/settings/powerline/install.sh
 
+echo "install gcloud"
+curl https://sdk.cloud.google.com | bash
+exec -l $SHELL
+gcloud init
+
