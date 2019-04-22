@@ -49,7 +49,7 @@ https://www.vagrantup.com/
 
 https://docs.docker.com/docker-for-mac/install/
 
-## Rubymine / Goland / IntelliJ / Webstorm のインストール
+## IntelliJ Ultimate のインストール
 
 - 学生アカウント用でインストールする。
 
@@ -66,6 +66,10 @@ https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
 `$ sh ~/mac_setup/setup.sh`
 
 tmux を使用する際には、Iterm の設定が必要になるかも…？
+
+## ergodox の設定　
+
+要追記
 
 ```
 Preferencesを開き、 
