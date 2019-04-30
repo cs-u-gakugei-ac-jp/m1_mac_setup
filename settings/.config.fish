@@ -48,11 +48,6 @@ if status --is-interactive
   alias gcob="git checkout -b"
   alias gco="git checkout"
 
-  # jetbrains
-  alias pycharm="/usr/local/bin/charm"
-  alias goland="/usr/local/bin/goland"
-  alias storm="/usr/local/bin/webstorm"
-
   # docker
   alias dr="sh ~/docker_command.sh"
   alias dcdu="docker-compose down; docker-compose up"
