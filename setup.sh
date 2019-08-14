@@ -38,6 +38,9 @@ brew install fzf
 echo "install ghq"
 brew install ghq
 
+echo "install pyenv"
+brew install pyenv
+
 # https://golang.org/
 echo "install goenv"
 brew install goenv
