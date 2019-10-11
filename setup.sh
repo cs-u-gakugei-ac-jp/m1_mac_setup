@@ -20,6 +20,10 @@ brew install rmtrash
 echo "# install mysql"
 brew install mysql
 
+# https://redis.io/topics/quickstart
+echo "# install redis"
+brew install redis
+
 # https://www.mycli.net/
 echo "# install mycli"
 brew install mycli
