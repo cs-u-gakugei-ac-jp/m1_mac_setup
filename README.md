@@ -61,7 +61,7 @@ https://hub.docker.com/
 
 ## IntelliJ Ultimate のインストール
 
-- 学生アカウント用でインストールする。
+- 学生アカウント用でインストールする。(1年に1回，更新しないと使えなくなるから登録したメールアカウントは年度変わる頃に要チェック)
 
 https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
 
