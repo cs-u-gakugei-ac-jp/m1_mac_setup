@@ -67,7 +67,7 @@ if status --is-interactive
 
   # genaral
   alias bd="cd ../"
-  alias rm="rmtrash"
+  alias rm="trash"
   # --- alias end ---
 
 # --- proxy command時にtmuxでおかしな処理になるので追加 end ---

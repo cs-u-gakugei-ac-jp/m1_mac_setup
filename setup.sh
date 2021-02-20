@@ -13,8 +13,8 @@ echo "# install brew"
 echo "# install vim"
 brew install vim
 
-echo "# install rmtrash"
-brew install rmtrash
+echo "# install trash"
+brew install trash
 
 # https://dev.mysql.com/downloads/installer/
 echo "# install mysql"
