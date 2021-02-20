@@ -38,17 +38,14 @@ https://tableplus.io/
 https://dev.mysql.com/downloads/workbench/
 
 ## Virtual Box のインストール
-dockerあればいらないかも
 
 https://www.virtualbox.org/
 
 ## Vagrant のインストール
-dockerあればいらないかも
 
 https://www.vagrantup.com/
 
 ## Docker のインストール
-こいつがあればよい
 dockerHubに登録するとなお良い（イメージとか共有できる）
 
 ###  dockerインストール
