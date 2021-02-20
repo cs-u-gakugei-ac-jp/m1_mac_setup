@@ -70,7 +70,7 @@ https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
 
 ## mac setup file を git clone
 
-`$ git clone https://github.com/Kawaguchisan/mac_setup.git ~/mac_setup`
+`$ git clone https://github.com/a171413/mac_setup.git ~/mac_setup`
 
 ## setup.sh を叩く
 
