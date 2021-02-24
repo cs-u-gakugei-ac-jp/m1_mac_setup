@@ -8,8 +8,11 @@ defaults write -g KeyRepeat -int 1
 # https://brew.sh/index_ja
 echo "# install brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# 上記でだめなら以下を試してみる
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo "上記でエラーが出たら以下を試してみる"
+echo "/usr/bin/ruby -e '"'$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"'"
+
+echo "# install iTerm2"
+brew install --cask iterm2
 
 # https://www.vim.org://www.vim.org/
 echo "# install vim"
@@ -107,4 +110,26 @@ curl https://sdk.cloud.google.com | bash
 exec -l $SHELL
 gcloud init
 
-echo "# setup ergodox"
+echo "# install google-chrome"
+brew install --cask google-chrome
+
+echo "# install slack"
+brew install --cask slack
+
+echo "# install TablePlus"
+brew install --cask tableplus
+
+echo "# install MySQL Workbench"
+brew install --cask mysqlworkbench
+
+echo "# install Virtual Box"
+brew install --cask virtualbox
+
+echo "# install vagrant"
+brew install --cask vagrant
+
+echo "# install Docker"
+read -p "Docker ID は作成した?:  " yn
+case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
+brew install docker
+brew install --cask docker
