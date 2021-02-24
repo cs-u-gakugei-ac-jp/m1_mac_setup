@@ -7,7 +7,9 @@ defaults write -g KeyRepeat -int 1
 
 # https://brew.sh/index_ja
 echo "# install brew"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# 上記でだめなら以下を試してみる
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # https://www.vim.org://www.vim.org/
 echo "# install vim"
