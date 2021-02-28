@@ -103,3 +103,7 @@ General→tmux
 ![画像](https://user-images.githubusercontent.com/21353481/55887838-3cf97600-5be9-11e9-91da-8bb775606f02.png)
 →fontの設定欄はiTerm2のバージョンによって多少変わる．設定するフォントは`Source Code Pro for Powerline`の14ptが良いと思う（趣味の領域）
 
+## FAQ
+もしtmuxが起動しなくなったら
+`$ sudo chmod 1777 /private/tmp`をやってみる
+
