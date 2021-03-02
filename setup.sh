@@ -92,7 +92,7 @@ chsh -s /usr/local/bin/fish
 /usr/local/bin/fish
 
 # おそらくここで一旦切れる
-
+<<COMMENTOUT
 echo "# fish settings"
 touch ~/.config/fish/config.fish
 echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
@@ -137,3 +137,4 @@ read -p "Docker ID は作成した?:  " yn
 case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 brew install docker
 brew install --cask docker
+COMMENTOUT
