@@ -82,6 +82,7 @@ git clone https://github.com/nhdaly/tmux-scroll-copy-mode ~/clone/path
 echo "# install fish"
 brew install fish
 
+
 echo "# install fisherman"
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 
@@ -89,6 +90,8 @@ echo "# change default shell"
 sudo sh -c "echo '/usr/local/bin/fish' >> /etc/shells"
 chsh -s /usr/local/bin/fish
 /usr/local/bin/fish
+
+# おそらくここで一旦切れる
 
 echo "# fish settings"
 touch ~/.config/fish/config.fish
@@ -98,8 +101,9 @@ echo "# install fisherman plugin"
 fisher install rbenv pyenv fzf decors/fish-ghq
 
 echo "# omf install / set theme"
-curl -L http://get.oh-my.fish | fish
 omf install agnoster
+fisher omf/theme-agnoster
+curl -L http://get.oh-my.fish | fish
 git clone https://github.com/dracula/iterm.git ~/mac_setup/settings/dracula
 open ~/mac_setup/settings/dracula/Dracula.itermcolors
 git clone https://github.com/powerline/fonts.git ~/mac_setup/settings/powerline
