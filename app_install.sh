@@ -5,6 +5,9 @@ echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
 echo "# install fisherman plugin"
 fisher install rbenv pyenv fzf decors/fish-ghq
 
+echo "# permission settings"
+sudo chmod 1777 /private/tmp
+
 echo "# omf install / set theme"
 omf install agnoster
 fisher omf/theme-agnoster
