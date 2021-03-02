@@ -3,7 +3,6 @@
 if status --is-interactive
   # theme
   omf theme agnoster
-  fisher omf/theme-agnoster
 
   # vi の挙動に
   fish_vi_key_bindings
