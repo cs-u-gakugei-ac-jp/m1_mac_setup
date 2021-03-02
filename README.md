@@ -2,48 +2,69 @@
 
 ## XCode のインストール
 
-省略
+AppStoreからインストール←まあまあ時間かかる
+インストールが終わったら立ち上げる
+なにやら同意を求められるので「同意する」
+コンポーネントのインストールが終われば準備終了
 
 ## Chrome のインストール
 
-省略
+このあとコマンドで勝手にやってくれる
 
 ## Microsoft Office のインストール
 
-省略
+学芸ポータルのリンクメニュー内「Office365メール」をクリック<br />
+一番上の「サインイン」をクリック<br />
+（もしかしたらここでMicrosoftアカウントのログインが求められるかも．求められたら従おう）<br />
+画面左上のメニューボタンを押し，「Office 365→」をクリック<br />
+遷移したページ右上の「Officeのインストール」<br />
+その後は適当にやってください
 
 ## LINE / Slack のインストール
 
-省略
+LINEはAppStoreからインストールする．https://apps.apple.com/jp/app/line/id539883307?mt=12
+
+Slackはコマンドで勝手にインストールしてくれる
 
 ## Iterm のインストール
 
 https://www.iterm2.com/
+コマンドで勝手にインストールしてくれる
 
 ## Alfred のインストール
 
 - App store からインストールする。
-https://itunes.apple.com/jp/app/alfred/id405843582?mt=12&ign-mpt=uo%3D4
+  https://itunes.apple.com/jp/app/alfred/id405843582?mt=12&ign-mpt=uo%3D4
 
-- Spot Light を起動しないように、Mac のデフォルトのショートカットキーを削除する。
+- Spot Light を起動しないように、Mac のデフォルトのショートカットキーを削除する。<br />
+ →「システム環境設定」→「キーボード」→「ショートカット」→「Spotlight」→「Spotlight検索を表示」のチェックを外す
 
-- Control + Space に Alfred を割り当てる。
+- AlfredのPreferencesからControl + Space に Alfred を割り当てる。
 
 ## Tableplus のインストール
 
 https://tableplus.io/
 
+コマンドで勝手にインストールしてくれる
+
 ## MySQL Workbench のインストール
 
 https://dev.mysql.com/downloads/workbench/
+
+コマンドで勝手にインストールしてくれる
+
 
 ## Virtual Box のインストール
 
 https://www.virtualbox.org/
 
+コマンドで勝手にインストールしてくれる
+
 ## Vagrant のインストール
 
 https://www.vagrantup.com/
+
+コマンドで勝手にインストールしてくれる
 
 ## Docker のインストール
 dockerHubに登録するとなお良い（イメージとか共有できる）
@@ -51,6 +72,8 @@ dockerHubに登録するとなお良い（イメージとか共有できる）
 ###  dockerインストール
 
 https://docs.docker.com/docker-for-mac/install/
+
+コマンドで勝手にインストールしてくれる
   
 ### dockerHub登録
 
@@ -73,11 +96,14 @@ https://qiita.com/tetrapod117/items/92f965cf1928739b70e4
 
 `$ sh ~/mac_setup/setup.sh`
 
+## app_install.sh を叩く
+
+`$ sh ~/mac_setup/app_install.sh`
+
 tmux を使用する際には、Iterm の設定が必要になるかも…？
 
 ## iTerm2 の設定　
 
-要追記
 
 ```
 Preferencesを開き、（macなら⌘+,で起動できる） 
@@ -92,10 +118,6 @@ General→tmux
 でゴニョゴニョすると毎回tmuxを打たなくても勝手に起動してくれる
 ```
 
-
-![img.png](img.png)
-
-あと、フォントとカラーの設定!
 
 ![画像](https://user-images.githubusercontent.com/21353481/55887806-2d7a2d00-5be9-11e9-8879-d8f704e626c2.png)
 →Color PresetsにDraculaが出てこない人は佐藤まで
