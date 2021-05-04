@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
 # keyboard settings
-exho "# keyboard settings"
+echo "# keyboard settings"
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 1
 
@@ -48,7 +48,7 @@ brew install reattach-to-user-namespace
 echo "# install fzf"
 brew install fzf
 
-# https://github.com/motemen/ghq 
+# https://github.com/motemen/ghq
 echo "# install ghq"
 brew install ghq
 
@@ -64,7 +64,7 @@ goenv install 1.11.4
 goenv global 1.11.4
 goenv rehash
 
-# https://www.ruby-lang.org/ja/ 
+# https://www.ruby-lang.org/ja/
 echo "# install rbenv / ruby-build"
 brew install rbenv ruby-build
 
@@ -92,7 +92,7 @@ chsh -s /usr/local/bin/fish
 /usr/local/bin/fish
 
 # おそらくここで一旦切れる
-<<COMMENTOUT
+#<<COMMENTOUT
 echo "# fish settings"
 touch ~/.config/fish/config.fish
 echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
@@ -101,18 +101,13 @@ echo "# install fisherman plugin"
 fisher install rbenv pyenv fzf decors/fish-ghq
 
 echo "# omf install / set theme"
+curl -L http://get.oh-my.fish | fish
 omf install agnoster
 fisher omf/theme-agnoster
-curl -L http://get.oh-my.fish | fish
 git clone https://github.com/dracula/iterm.git ~/mac_setup/settings/dracula
 open ~/mac_setup/settings/dracula/Dracula.itermcolors
 git clone https://github.com/powerline/fonts.git ~/mac_setup/settings/powerline
 sh ~/mac_setup/settings/powerline/install.sh
-
-echo "# install gcloud"
-curl https://sdk.cloud.google.com | bash
-exec -l $SHELL
-gcloud init
 
 echo "# install google-chrome"
 brew install --cask google-chrome
@@ -133,8 +128,13 @@ echo "# install vagrant"
 brew install --cask vagrant
 
 echo "# install Docker"
-read -p "Docker ID は作成した?:  " yn
-case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
+#read -p "Docker ID は作成した?:  " yn
+#case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 brew install docker
 brew install --cask docker
-COMMENTOUT
+#COMMENTOUT
+
+echo "# install gcloud"
+curl https://sdk.cloud.google.com | bash
+exec -l $SHELL
+gcloud init
