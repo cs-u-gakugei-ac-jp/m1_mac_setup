@@ -90,7 +90,7 @@ echo "# fish settings"
 mkdir ~/.config
 mkdir ~/.config/fish
 touch ~/.config/fish/config.fish
-echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
+echo "source ~/m1_mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.config/fish/config.fish
 echo 'eval (/opt/homebrew/bin/brew shellenv)'
 
@@ -116,10 +116,10 @@ chsh -s /usr/local/bin/fish
 echo "# omf install / set theme"
 omf install agnoster
 fisher omf/theme-agnoster
-git clone https://github.com/dracula/iterm.git ~/mac_setup/settings/dracula
-open ~/mac_setup/settings/dracula/Dracula.itermcolors
-git clone https://github.com/powerline/fonts.git ~/mac_setup/settings/powerline
-sh ~/mac_setup/settings/powerline/install.sh
+git clone https://github.com/dracula/iterm.git ~/m1_mac_setup/settings/dracula
+open ~/m1_mac_setup/settings/dracula/Dracula.itermcolors
+git clone https://github.com/powerline/fonts.git ~/m1_mac_setup/settings/powerline
+sh ~/m1_mac_setup/settings/powerline/install.sh
 
 echo "# install google-chrome"
 brew install --cask google-chrome
