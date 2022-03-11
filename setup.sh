@@ -1,15 +1,16 @@
 #!/usr/bin/sh
 
 # keyboard settings
-echo "# keyboard settings"
-defaults write -g InitialKeyRepeat -int 10
-defaults write -g KeyRepeat -int 1
+# キーボードのリピートについて設定されるのでやりたい人だけコメントアウトを外して実行してくださいな
+#echo "# keyboard settings"
+#defaults write -g InitialKeyRepeat -int 10
+#defaults write -g KeyRepeat -int 1
 
 # https://brew.sh/index_ja
 echo "# install brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo "上記でエラーが出たら以下を試してみる"
-echo "/usr/bin/ruby -e '"'$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"'"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/usr/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "# install iTerm2"
 brew install --cask iterm2
@@ -57,11 +58,14 @@ brew install pyenv
 
 # https://golang.org/
 echo "# install goenv"
-brew install goenv
+git clone https://github.com/syndbg/goenv.git ~/.goenv
+echo 'export GOENV_ROOT="$HOME/.goenv"'
+echo 'export PATH="$GOENV_ROOT/bin:$PATH"'
+echo 'eval "$(goenv init -)"'
 
 echo "# install go"
-goenv install 1.11.4
-goenv global 1.11.4
+goenv install 1.17.2
+goenv global 1.17.2
 goenv rehash
 
 # https://www.ruby-lang.org/ja/
@@ -69,8 +73,8 @@ echo "# install rbenv / ruby-build"
 brew install rbenv ruby-build
 
 echo "# install ruby"
-rbenv install 2.6.1
-rbenv global 2.6.1
+rbenv install 3.1.1
+rbenv global 3.1.1
 rbenv rehash
 
 echo "# install tmux"
@@ -82,9 +86,24 @@ git clone https://github.com/nhdaly/tmux-scroll-copy-mode ~/clone/path
 echo "# install fish"
 brew install fish
 
+echo "# fish settings"
+mkdir ~/.config
+mkdir ~/.config/fish
+touch ~/.config/fish/config.fish
+echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.config/fish/config.fish
+echo 'eval (/opt/homebrew/bin/brew shellenv)'
 
 echo "# install fisherman"
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
+echo "# install fisherman plugin"
+fisher install rbenv pyenv fzf decors/fish-ghq
+
+curl -L http://get.oh-my.fish | fish
+
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 echo "# change default shell"
 sudo sh -c "echo '/usr/local/bin/fish' >> /etc/shells"
@@ -93,15 +112,8 @@ chsh -s /usr/local/bin/fish
 
 # おそらくここで一旦切れる
 #<<COMMENTOUT
-echo "# fish settings"
-touch ~/.config/fish/config.fish
-echo "source ~/mac_setup/settings/.config.fish" >> ~/.config/fish/config.fish
-
-echo "# install fisherman plugin"
-fisher install rbenv pyenv fzf decors/fish-ghq
 
 echo "# omf install / set theme"
-curl -L http://get.oh-my.fish | fish
 omf install agnoster
 fisher omf/theme-agnoster
 git clone https://github.com/dracula/iterm.git ~/mac_setup/settings/dracula
