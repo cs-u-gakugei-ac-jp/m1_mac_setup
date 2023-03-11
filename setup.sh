@@ -9,7 +9,7 @@
 # https://brew.sh/index_ja
 echo "# install brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/usr/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "# install iTerm2"
@@ -96,19 +96,18 @@ echo 'eval (/opt/homebrew/bin/brew shellenv)'
 
 echo "# install fisherman"
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-
-echo "# install fisherman plugin"
-fisher install rbenv pyenv fzf decors/fish-ghq
-
 curl -L http://get.oh-my.fish | fish
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 echo "# change default shell"
-sudo sh -c "echo '/usr/local/bin/fish' >> /etc/shells"
-chsh -s /usr/local/bin/fish
-/usr/local/bin/fish
+sudo sh -c "echo '/opt/homebrew/bin/fish' >> /etc/shells"
+chsh -s /opt/homebrew/bin/fish
+/opt/homebrew/bin/fish
+
+echo "# install fisherman plugin"
+fisher install rbenv pyenv fzf decors/fish-ghq
 
 # おそらくここで一旦切れる
 #<<COMMENTOUT

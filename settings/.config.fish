@@ -35,7 +35,7 @@ if status --is-interactive
       end
     end
   end
-  eval "tmux source ~/mac_setup/settings/.tmux.conf"
+  eval "tmux source ~/m1_mac_setup/settings/.tmux.conf"
 
   # --- alias start ---
   # git 
@@ -50,7 +50,9 @@ if status --is-interactive
 
   # docker
   alias dr="sh ~/docker_command.sh"
-  alias dcdu="docker-compose down; docker-compose up"
+  alias dcdu="docker compose down; docker compose up"
+  alias dcu="docker compose up"
+  alias dcd="docker compose down"
   alias dsrs="docker-sync stop; docker-sync start"
   alias docker_all_image_rmi="docker images -aq | xargs docker rmi -f"
   alias docker_all_container_rmi="docker ps -aq | xargs docker rm -f"
@@ -61,8 +63,8 @@ if status --is-interactive
   alias kn="kubens"
 
   # vim
-  alias vim="vim -u ~/mac_setup/settings/.vimrc"
-  alias vi="vim -u ~/mac_setup/settings/.vimrc"
+  alias vim="vim -u ~/m1_mac_setup/settings/.vimrc"
+  alias vi="vim -u ~/m1_mac_setup/settings/.vimrc"
 
   # genaral
   alias bd="cd ../"
